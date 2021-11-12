@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon" />
+  <title>Cinema Retro</title>
+</head>
+
+<body>
+  <header id="navbar">
+
+    <!-- ============================= barra de navegacion ======================================= -->
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand logo">
+          <img src="./img/Logo.png" alt="Logo de la Pagina" width="120px" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active login text-white" aria-current="page" href="./pages/login.html">Login</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link active suscribete text-white" data-bs-toggle="modal"
+                data-bs-target="#modalSuscripcion" data-bs-whatever="@getbootstrap">Suscríbete</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active contactanos text-white" href="./pages/contacto.html">Contáctanos</a>
+            </li>
+
+            <li class="nav-item acercade">
+              <a class="nav-link active nosotros text-white" href="./pages/acerca-de-nosotros.html" tabindex="-1"
+                aria-disabled="true">Acerca de nosotros</a>
+            </li>
+
+            <div class="row">
+              <div class="
+                    boleteriacaja
+                    justify-content-md-start justify-content-sm-start
+                    d-flex
+                  ">
+                <li class="nav-item dropdown">
+                  <a class="
+                        nav-link
+                        dropdown-toggle
+                        active
+                        text-boleteria
+                        py-0
+                        px-1
+                        text-white
+                      " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Boletería
+                  </a>
+
+                  <ul class="dropdown-menu text-dropdown" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="./pages/galeria-de-imagenes.html">Cartelera</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/error404.html">Horarios</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/error404.html">Candy Bar</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/error404.html">
+                        Calificación
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ====================================== carousel ======================================= -->
+
+    <section>
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./img/carousel/movie-g67ca62994_1920.jpg" class="d-block w-100"
+              alt="imagenen de taquillas de cine" />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/carousel/popcorn-g3575def12_1920.jpg" class="d-block w-100" alt="imagen de pochoclos" />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/carousel/ticket-g0739ad8fa_1920.jpg" class="d-block w-100"
+              alt="imagen de una cinta de pelicula" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== peliculas en cartelera ================================== -->
+
+    <section>
+      <div class="container">
+        <div class="row my-3">
+          <h1 class=" title-main text-center mb-3">EN CARTELERA</h1>
+          <div class="col-12 col-md-6 col-lg-6 h-30">
+            <div class="row mb-4 gy-4">
+              <div class="col-12 col-md-12 col-lg-11">
+                <div class="card text-white bg-dark pelis-main h-100">
+                  <img src="./img/peliculas main/Cinema_Paradiso.jpg" class="card-img-top img-fluid"
+                    alt="Cinema paradiso">
+                  <div class="card-body">
+                    <h5 class="card-title">Cinema Paradiso</h5>
+                    <p class="card-text-movies">
+                      Cinema Paradiso narra la historia de un niño de un pueblecito italiano, en el que el único pasatiempo es disfrutar de las películas del cine Paradiso. Subyugado por las imágenes en movimiento, Salvatore cree ciegamente que el cine es magia, pero, un día, Alfredo, el operador, accede a enseñarle al pequeño los misterios y secretos que se ocultan detrás de una película. Salvador va creciendo y llega el momento en el que debe abandonar el pueblo y buscarse la vida. Treinta años después, recibe un mensaje, en el que le comunican que debe volver a casa.
+                     </p>
+                    <div class="boton__comprar">
+                      <a href="./pages/blog-1-cinema-paradiso.html" class="btn btn-danger">Ver más</a>
+                      <button type="button" class="btn btn-warning boton_comprar_entrada">Comprar entrada</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-12 col-md-12 col-lg-11">
+                <div class="card text-white bg-dark pelis-main h-100">
+                  <img src="./img/peliculas main/Volver_al_Futuro_Poster.jpg" class="card-img-top img-fluid"
+                    alt="Volver al futuro">
+                  <div class="card-body">
+                    <h5 class="card-title">Volver al futuro</h5>
+                    <p class="card-text-movies">
+                      El adolescente Marty McFly es amigo de Doc, un científico al que todos toman
+                      por loco. Cuando Doc crea una máquina para viajar en el tiempo, un error fortuito hace que Marty llegue a 1955, año en el que sus futuros padres aún no se habían conocido. Después de impedir su primer encuentro, deberá conseguir que se conozcan y se casen; de lo contrario, su existencia no sería posible.
+                    </p>
+                    <div class="boton__comprar">
+                      <a href="./pages/blog-3-volver-al-futuro.html" class="btn btn-danger">Ver más</a>
+                      <button type="button" class="btn btn-warning boton_comprar_entrada">Comprar entrada</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-12 col-lg-11">
+                <div class="card text-white bg-dark pelis-main h-100">
+                  <img src="./img/peliculas main/cadena perpetua.jpg" class="card-img-top img-fluid"
+                    alt="Cadena Perpetua">
+                  <div class="card-body">
+                    <h5 class="card-title">Cadena Perpetua</h5>
+                    <p class="card-text-movies">
+                      Acusado del asesinato de su mujer, Andrew Dufresne, tras ser condenado a
+                      cadena perpetua, es enviado a la cárcel de Shawshank. 
+                      Con el paso de los años conseguirá ganarse la
+                      confianza del director del centro y el respeto de sus compañeros de prisión, especialmente de Red, el jefe de la mafia de los sobornos.
+                    </p>
+                    <div class="boton__comprar">
+                      <a href="./pages/blog-2-cadena-perpetua.html" class="btn btn-danger">Ver más</a>
+                      <button type="button" class="btn btn-warning boton_comprar_entrada">Comprar entrada</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- =========================== botones de paginacion ============================ -->
+
+            <nav aria-label="page">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- ========================== input de busqueda de películas ============================= -->
+
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="input-busqueda mb-3">
+              <input class="form-control" type="search" placeholder="Busca tu película" aria-label="default input example">
+              <div class="icon-buscar">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+
+            <!-- ============================== lista de películas ================================ -->
+
+
+            <div class="generos text-center mt-4">
+              <h3>Géneros de películas</h3>
+
+              <div class="categorias mt-3">
+                <ul class="list-group lista-pelis">
+                  <li class="list-group-item">Acción</li>
+                  <li class="list-group-item">Aventura</li>
+                  <li class="list-group-item">Bélico</li>
+                  <li class="list-group-item">Ciencia Ficción</li>
+                  <li class="list-group-item">Comedia</li>
+                  <li class="list-group-item">Crimen</li>
+                  <li class="list-group-item">Documental</li>
+                  <li class="list-group-item">Fantasia</li>
+                  <li class="list-group-item">Romance</li>
+                  <li class="list-group-item">Thriller</li>
+                  <li class="list-group-item">Suspenso</li>
+                  <li class="list-group-item">Terror</li>
+                </ul>
+              </div>
+
+              <!-- ========================== imagen de publicidad ============================== -->
+
+              <div class="publicidad mt-4">
+                <h3 class="title-promos mb-3">Beneficios</h3>
+                <img class="img-fluid" src="./img/publicidad 2x1.jpg" alt="publicidad 2x1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================= footer =========================================== -->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-4 mt-3">
+          <ul class="redes ps-0">
+            <a href="./pages/error404.html" target="_blank">
+              <li>
+                <i class="fab fa-facebook-square"> Facebook</i>
+              </li>
+            </a>
+            <a href="./pages/error404.html" target="_blank">
+              <li>
+                <i class="fab fa-instagram-square"> Instagram</i>
+              </li>
+            </a>
+            <a href="./pages/error404.html" target="_blank">
+              <li>
+                <i class="fab fa-twitter-square"> Twitter</i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="logoresponsive col-12 col-md-4 col-lg-4 mt-2">
+          <img class="logofooter mb-2" src="./img/Logo.png" alt="Logo de la página" />
+        </div>
+        <div class="ausresponsive col-12 col-md-4 col-lg-4 mt-3">
+          <h3 class="auspiciante">Auspiciantes</h3>
+          <ul class="info mt-1">
+            <li>
+              <a class="icon fab fa-google px-2" href="./pages/error404.html" target="_blank"></a>
+            </li>
+            <li>
+              <a class="icon fab fa-microsoft px-2" href="./pages/error404.html" target="_blank"></a>
+            </li>
+            <li>
+              <a class="icon fab fa-amazon mt-1 px-2" href="./pages/error404.html" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================ modal suscripción ======================================= -->
+
+  <div class="modal fade modal-suscripcion" id="modalSuscripcion" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="./img/subscribe-g6cc431eeb_640.png" alt="imgsuscribirse" width="180px"><span> <strong> ¡Accedé a la
+              cartelera y venta anticipada de entradas antes que todos!</strong></span>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modalSuscripcionBody">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Provincia</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Localidad</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Número de teléfono</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Dirección de email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="example@example.com">
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Prefiero recibir notificaciones por
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">La mañana</a></li>
+                <li><a class="dropdown-item" href="#">La tarde</a></li>
+                <li><a class="dropdown-item" href="#">La noche </a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#"> ¡Gracias por elegirnos!</a></li>
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> ¡No gracias!</button>
+          <button type="button" class="btn btn-danger botonSuscribirse"> ¡Sí por favor! <i class="fa fa-bell"
+              aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============================== javascript de bootstrap ====================================== -->
+
+  <script src="https://kit.fontawesome.com/f3620a907a.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

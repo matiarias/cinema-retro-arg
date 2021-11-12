@@ -1,0 +1,684 @@
+:root {
+  --color-navbar: linear-gradient(120deg, #122b40, #446cb3);
+  --color-navbar-1: linear-gradient(120deg, #41100c, #5f0c04);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ======================================= navbar =========================================== */
+
+#navbar {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--color-navbar-1);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar img {
+  transition: transform 1s;
+  filter: grayscale(2);
+  border: 8px solid;
+  border-color: black;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.navbar img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+  transition-property: filter;
+  transition-duration: 1s;
+  opacity: 0.7;
+}
+
+.login {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.pochoclos-login {
+  margin-top: 45px;
+}
+
+.modal-dialog {
+  margin-top: 150px;
+  font-size: 23px;
+}
+.modal-body {
+  font-size: 20px;
+}
+
+.mailLogin {
+  font-size: 15px;
+}
+
+.suscribete {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.modal-header {
+  font-size: 20px;
+}
+
+.modalSuscripcionBody {
+  padding: 10px;
+}
+
+.botonSuscribirse {
+  background-image: linear-gradient(
+    to right top,
+    #810d21,
+    #9c1227,
+    #b8192b,
+    #d4212f,
+    #f02a32
+  );
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.contactanos {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.telefono {
+  font-size: 20px;
+}
+
+.nosotros {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.text-acerca {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.text-boleteria {
+  font-size: 1.5rem;
+  box-sizing: content-box !important;
+  width: 100%;
+  border: 2px solid;
+  border-radius: 5px;
+  margin-top: 6px;
+}
+
+.text-dropdown {
+  font-size: 17px;
+}
+
+/* ===================================================================================== */
+
+/* ================================= main - pagina principal =========================== */
+
+#main section {
+  z-index: 999;
+}
+.carousel-inner img {
+  max-height: 70vh;
+  object-fit: cover;
+  filter: grayscale(10%);
+}
+
+.title-main {
+  font-weight: bold;
+  color: rgb(122, 10, 10) !important;
+}
+
+.pelis-main img {
+  object-fit: cover;
+}
+
+.card-text-movies {
+  font-size: 1rem;
+}
+
+.page-item {
+  font-size: 13px;
+}
+
+.pagination li a {
+  border-color: #000;
+  color: #000;
+}
+
+.pagination li a:hover {
+  border-color: rgb(150, 0, 20);
+  color: #fff;
+  background-color: rgb(150, 0, 20);
+}
+
+.input-busqueda {
+  display: flex;
+  border: 2px solid #3332;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.input-busqueda input {
+  border: none;
+  outline: none;
+}
+
+.input-busqueda input:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 7px rgb(120, 10, 10);
+}
+
+.input-busqueda input:active {
+  border: none;
+  outline: none;
+}
+
+.icon-buscar {
+  width: 15%;
+  background-color: rgb(150, 0, 20);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-buscar i {
+  font-size: 20px;
+  color: #fff;
+}
+.categorias ul {
+  cursor: pointer;
+}
+.categorias ul li {
+  font-size: 0.8rem;
+}
+
+.categorias ul li:hover {
+  border-color: rgb(150, 0, 20);
+  color: #fff;
+  background-color: rgb(150, 0, 20);
+}
+
+.boton__comprar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boton_comprar_entrada {
+  margin-left: 10px;
+}
+
+/* ======================================================================================== */
+
+/* =================================== footer ============================================= */
+
+#footer {
+  text-align: center;
+  background: var(--color-navbar-1);
+  margin-top: auto;
+}
+
+#footer .redes {
+  list-style: none;
+}
+
+#footer .redes a {
+  display: flex;
+}
+
+#footer a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.redes a {
+  transition: transform 0.5s;
+  color: white;
+}
+
+.redes a:hover {
+  transform: scale(1.1);
+  transition-property: filter;
+  transition-duration: 0.5s;
+  color: rgb(0, 0, 0);
+}
+
+.info .icon {
+  transition: transform 0.5s;
+  color: white;
+}
+
+.info .icon:hover {
+  transform: scale(1.1);
+  transition-property: filter;
+  transition-duration: 0.5s;
+  color: rgb(0, 0, 0);
+}
+
+#footer .info {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.auspiciante {
+  display: flex;
+  justify-content: end;
+  color: rgb(255, 255, 255);
+  font-family: fantasy;
+}
+
+#footer .info a {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+}
+
+#footer .info .fa-amazon {
+  font-size: 46px;
+}
+
+.logofooter {
+  transition: transform 1s;
+  filter: grayscale(2);
+  border: 8px solid;
+  border-color: black;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.logofooter:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+  transition-property: filter;
+  transition-duration: 1s;
+  opacity: 0.7;
+}
+
+#footer .container img {
+  width: 120px;
+}
+
+/* ============================================================================================ */
+
+/* ================================ galeria de imagenes ======================================== */
+
+#main-galeria-imagenes {
+  overflow-x: hidden;
+}
+
+#main-galeria-imagenes img {
+  object-fit: cover;
+}
+
+#imagen-de-fondo-pag-galeria {
+  background-image: url(https://fondosmil.com/fondo/57395.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* ============================================================================================ */
+
+/* ====================================== error 404 ============================================ */
+
+.error404 {
+  background: var(--color-navbar) !important;
+}
+/* ============================================================================================= */
+
+/* ================================= pagina de contactanos =====================================*/
+
+#main-pag-de-contacto {
+  overflow-x: hidden;
+}
+
+#imagen-de-fondo-pag-contacto {
+  background-image: url(https://www.caracteristicas.co/wp-content/uploads/2019/02/cine-5-e1585960007845.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.info_dire {
+  color: #fff;
+}
+
+.google-maps iframe {
+  min-height: 45vh;
+  width: 100%;
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.email-contactanos {
+  width: 50%;
+}
+
+/* ============================================================================================= */
+
+/* =================================== pagina de acerca de nosotros ============================= */
+
+#background-about-us {
+  background-image: url(https://wallpaperaccess.com/full/1561985.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.cards-team img {
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  transition: all 0.7s;
+}
+
+.cards-team img:hover {
+  transform: scale(1.1);
+  filter: grayscale(80%);
+}
+
+.inicioo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inicioo a {
+  font-size: x-large;
+}
+/* ============================================================================================= */
+
+/* ===================================== pagina de login ======================================= */
+
+.loginsize {
+  font-size: 1.3rem;
+}
+
+.botones {
+  font-size: 1rem;
+}
+
+.login_email {
+  width: 60%;
+}
+
+.login-contraseña {
+  width: 60%;
+}
+
+/* ========================================================================================== */
+
+/* ====================================== paginas de blog ======================================= */
+
+.sombra {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 420px;
+  height: 785px;
+}
+
+.sombra img {
+  height: 765px;
+}
+
+.titulo {
+  color: rgb(122, 10, 10) !important;
+}
+
+.lista ul {
+  list-style: none;
+}
+
+.lista h4 i {
+  opacity: 0.3;
+}
+
+.video-responsive {
+  height: 300px;
+}
+
+.video-responsive iframe {
+  height: 100%;
+  width: 100%;
+}
+
+#main-blog-1 p {
+  font-size: 1rem;
+}
+
+.comentarios {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #7775;
+  background-color: #aaa1;
+  margin-bottom: 15px;
+}
+
+.comentarios p {
+  margin-left: 4px;
+}
+
+.comentarios i {
+  justify-content: center;
+  font-size: 22px;
+  color: rgb(122, 10, 10);
+}
+
+/* =========================================================================================== */
+
+/* ====================================== media queries ====================================== */
+
+@media screen and (min-width: 300px) and (max-width: 598px) {
+  .carousel img {
+    height: 50vh;
+  }
+}
+
+/* =========================================================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #main-galeria-imagenes img {
+    height: 400px;
+    object-fit: contain;
+  }
+
+  .input-busqueda {
+    width: 100%;
+  }
+}
+
+/* ============================================================================================= */
+
+@media screen and (max-width: 576px) {
+  .publicidad {
+    display: none !important;
+  }
+
+  .tamañomodal {
+    margin-top: 80%;
+  }
+
+  #imagen-de-fondo-pag-contacto {
+    background: #3332;
+  }
+
+  .info_dire {
+    color: #222;
+  }
+
+  .google-maps iframe {
+    border: 1px solid #3335;
+  }
+
+  .boton-contacto {
+    background: rgb(122, 10, 10);
+    color: #fff;
+    border: 1px solid #000;
+  }
+
+  .email-contactanos {
+    width: 100%;
+  }
+
+  .video-responsive {
+    height: 200px;
+  }
+}
+
+/* ============================================================================================ */
+
+@media (max-width: 767px) {
+  .login_email {
+    width: 100%;
+  }
+
+  .login-contraseña {
+    width: 100%;
+  }
+
+  .modal-suscripcion {
+    position: absolute;
+    z-index: 9999;
+    min-height: 50vh;
+  }
+
+  .text-boleteria {
+    width: 150px;
+  }
+
+  .input-busqueda {
+    width: 100%;
+  }
+
+  .login,
+  .suscribete,
+  .contactanos,
+  .nosotros {
+    padding-left: 4px !important;
+  }
+
+  .redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .redes li {
+    padding-right: 20px;
+  }
+  .auspiciante {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    color: white;
+  }
+
+  #footer .info {
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+  }
+
+  .redes i {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ========================================================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .text-boleteria {
+    width: 150px;
+    font-size: 1.4rem;
+  }
+
+  .login,
+  .suscribete,
+  .contactanos,
+  .nosotros,
+  .text-boleteria {
+    padding-left: 4px !important;
+    font-size: 1.2rem;
+  }
+
+  .auspiciante {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    color: white;
+  }
+
+  #footer .info {
+    display: flex;
+    justify-content: end;
+  }
+
+  .logoresponsive {
+    display: flex;
+    justify-content: center;
+  }
+
+  .auspiciante {
+    justify-content: end;
+    padding-right: 12px;
+  }
+
+  .ausresponsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .tamañomodal {
+    margin-top: 80%;
+  }
+}
+
+/* ============================================================================================ */
+
+@media (min-width: 991px) and (max-width: 1400px) {
+  .auspiciante {
+    font-family: fantasy;
+    color: white;
+    padding-right: 5px;
+  }
+}
+/* ========================================================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .video-responsive {
+    height: 250px;
+  }
+}
+
+/* ============================================================================================= */

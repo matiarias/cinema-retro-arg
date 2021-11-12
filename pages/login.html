@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header id="navbar">
+      <!-- BARRA DE NAVEGACION -->
+
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand logo">
+              <img
+                src="../img/Logo.png"
+                alt="Logo de la Pagina"
+                width="120px"
+              />
+            </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active login text-white" 
+                  aria-current="page"
+                  href="../index.html"
+                  > Inicio </a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active login text-white"
+                  aria-current="page"
+                  href="../pages/error404.html"
+                  >Suscríbete</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active suscribete text-white"
+                  href="../pages/contacto.html"
+                  >Contáctanos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active contactanos text-white"
+                  href="../pages/acerca-de-nosotros.html"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <div class="row">
+                <div
+                  class="
+                    boleteriacaja
+                    justify-content-md-start justify-content-sm-start
+                    d-flex
+                  "
+                >
+                  <li class="nav-item dropdown">
+                    <a
+                      class="
+                        nav-link
+                        dropdown-toggle
+                        active
+                        text-boleteria
+                        py-0
+                        px-1
+                        text-white
+                      "
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Boletería
+                    </a>
+
+                    <ul
+                      class="dropdown-menu text-dropdown"
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="./galeria-de-imagenes.html"
+                          >Cartelera</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../pages/error404.html"
+                          >Horarios</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../pages/error404.html"
+                          >Candy Bar</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="../pages/error404.html">
+                          Calificación
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="login">
+        <div class="container-fluid formulario">
+          <div class="row filas col">
+            <div class="loginsize col-12 col-md-12 col-lg-6 mt-5">
+              <form class="px-4 py-3">
+                <div class="mb-3 login_email">
+                  <label for="exampleDropdownFormEmail1" class="form-label"
+                    >Dirección de email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleDropdownFormEmail1"
+                    placeholder="example@example.com"
+                  />
+                </div>
+                <div class="mb-3 login-contraseña">
+                  <label for="exampleDropdownFormPassword1" class="form-label"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleDropdownFormPassword1"
+                    placeholder="Contraseña"
+                  />
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="dropdownCheck"
+                    />
+                    <label class="form-check-label" for="dropdownCheck">
+                      Recordar mi usuario
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-danger btn-lg m-1">
+                  Ingresar
+                </button>
+                <br>
+                <button type="button" class="btn btn-outline-danger btn-lg m-1"><i class="fa fa-google" aria-hidden="true" fa fax2 style="color: red;"></i>
+                  Continuar con tu cuenta de Google
+                </button>
+                <button type="button" class="btn btn-outline-danger btn-lg m-1"><i class="fa fa-facebook" aria-hidden="true" fa fax2 style="color: blue;"></i>
+                  Continuar con tu cuenta de Facebook
+                </button>
+              </form>
+              <div class="dropdown-divider p-2"></div>
+              <button type="button" class="btn btn-light mt-3 ms-3">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contraseñaModal"
+                >
+                  ¿Olvidaste tu contraseña?
+                </a>
+              </button>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6 p-0 pochoclos-login">
+              <img
+              src="../img/popcorn-ga32073b3b_1280.jpg"
+              class="img-fluid " alt="imagen pochoclos login">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4 mt-3">
+            <ul class="redes ps-0">
+              <a href="../pages/error404.html" target="_blank"
+                ><li>
+                  <i class="fab fa-facebook-square"> Facebook</i>
+                </li></a
+              >
+              <a href="../pages/error404.html" target="_blank"
+                ><li>
+                  <i class="fab fa-instagram-square"> Instagram</i>
+                </li></a
+              >
+              <a href="../pages/error404.html" target="_blank"
+                ><li>
+                  <i class="fab fa-twitter-square"> Twitter</i>
+                </li></a
+              >
+            </ul>
+          </div>
+          <div class="logoresponsive col-12 col-md-4 col-lg-4 mt-2">
+            <img
+              class="logofooter mb-2"
+              src="../img/Logo.png"
+              alt="Logo de la página"
+            />
+          </div>
+          <div class="ausresponsive col-12 col-md-4 col-lg-4 mt-3">
+            <h3 class="auspiciante">Auspiciantes</h3>
+            <ul class="info mt-1">
+              <li>
+                <a
+                  class="icon fab fa-google px-2"
+                  href="../pages/error404.html"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon fab fa-microsoft px-2"
+                  href="../pages/error404.html"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon fab fa-amazon mt-1 px-2"
+                  href="../pages/error404.html"
+                  target="_blank"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contraseñaModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <strong>RECUPERAR CONTRASEÑA </strong>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Ingresa el correo electrónico asociado a la cuenta. Te enviaremos la
+            info para restablecer la contraseña.
+          </div>
+          <div class="mb-3 mailLogin">
+            <label for="exampleFormControlInput1" class="form-label ms-3">
+              Dirección de email:
+            </label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="example@example.com"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-primary">Listo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f3620a907a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src = " https://use.fontawesome.com/017739fd9a.js " > </script>
+  </body>
+</html>
